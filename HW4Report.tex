@@ -308,14 +308,36 @@ accuracy_score(testing_labels,test_y_pred)*100
 
 \includegraphics[width=\textwidth]{testaccuracy}
 
+We get a training accuracy of 100\% and testing accuracy of 90\%.
+
 
 \subsection{Part d}
 
+We changed the values of patch size (10x10, 12x12 and 14x14), number of trees in random forest (100,200) and the cluster size (main cluster x sub cluster = 20x20, 25x25, 30x30, 50x50). The test accuracies obtained are as shown below.
+
+\includegraphics[width=\textwidth]{IMG_5535}
+
+\includegraphics[width=\textwidth]{IMG_5536}
+
+\includegraphics[width=\textwidth]{IMG_5533}
+
+\includegraphics[width=\textwidth]{IMG_5534}
+
+\includegraphics[width=\textwidth]{IMG_5537}
+
+\includegraphics[width=\textwidth]{IMG_5538}
+
+\includegraphics[width=\textwidth]{IMG_5539}
+
+\includegraphics[width=\textwidth]{IMG_5540}
+
+\includegraphics[width=\textwidth]{IMG_5541}
+
+From the above, it is observed that if we use a patch size of 14x14 and cluster size of 25x25 and 200 trees in the decision forest, we can obtain a test accuracy as high as 95.1\%.
+ 
 \subsection{Part e}
 
-
-
-
+Our best model (as obtained from part d with a testing accuracy of 95.1\%) performs better than the linear classifiers, boosted stumps (Kegl et al., ICML 2009) and K-nearest-neighbors, Euclidean (L2)(LeCun et al. 1998). However, it does not perform as well as non-linear classifiers, SVMs, neural networks and convolutional nets.
 
 
 %\section{Appendix}
